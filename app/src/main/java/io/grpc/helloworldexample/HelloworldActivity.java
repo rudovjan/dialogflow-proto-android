@@ -30,6 +30,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import com.google.cloud.dialogflow.v2beta1.SessionName;
 import com.google.cloud.dialogflow.v2beta1.SessionsClient;
+import com.google.cloud.dialogflow.v2beta1.SessionsSettings;
 
 public class HelloworldActivity extends AppCompatActivity {
   private Button sendButton;
