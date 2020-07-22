@@ -16,45 +16,10 @@
 
 package io.grpc.helloworldexample;
 
-import android.app.Activity;
-import android.content.Context;
-import android.os.AsyncTask;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
-import android.text.method.ScrollingMovementMethod;
-import android.view.View;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 import com.google.cloud.dialogflow.v2beta1.SessionName;
 import com.google.cloud.dialogflow.v2beta1.SessionsClient;
 import com.google.cloud.dialogflow.v2beta1.SessionsSettings;
 
-public class HelloworldActivity extends AppCompatActivity {
-  private Button sendButton;
-  private EditText hostEdit;
-  private EditText portEdit;
-  private EditText messageEdit;
-  private TextView resultText;
+public class HelloworldActivity  {
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_helloworld);
-    sendButton = (Button) findViewById(R.id.send_button);
-    hostEdit = (EditText) findViewById(R.id.host_edit_text);
-    portEdit = (EditText) findViewById(R.id.port_edit_text);
-    messageEdit = (EditText) findViewById(R.id.message_edit_text);
-    resultText = (TextView) findViewById(R.id.grpc_response_text);
-    resultText.setMovementMethod(new ScrollingMovementMethod());
-  }
-
-  public void sendMessage(View view) {
-    ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE))
-        .hideSoftInputFromWindow(hostEdit.getWindowToken(), 0);
-    sendButton.setEnabled(false);
-    resultText.setText("");
-  }
 }
