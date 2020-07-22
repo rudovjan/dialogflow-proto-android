@@ -6,7 +6,7 @@ This is repository showing straggles with creating client for dialogflow on Andr
 # Copy and paste proto files
 
 * Setup protoc gradle plugin according to example https://github.com/grpc/grpc-java/blob/v1.30.1/examples/android/helloworld/app/build.gradle
-* fix duration.proto problem protocolbuffers/protobuf#7094 (comment)
+* fix duration.proto problem https://github.com/protocolbuffers/protobuf/pull/7738
 * fix annotation problem in operations.proto
 * Copy and paste missing client files and stub
 * fix client files
